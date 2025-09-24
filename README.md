@@ -28,4 +28,4 @@ A simple React + TypeScript application to manage comments with Redux, supportin
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/armenbichakhchyan/comments-app
