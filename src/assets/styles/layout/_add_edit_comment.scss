@@ -1,0 +1,115 @@
+.comments__add__modal {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+
+  h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #0090cc;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .form-group {
+      label {
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #555;
+        text-transform: uppercase;
+        font-size: 0.95rem;
+      }
+
+      .comments__input,
+      .comments__textarea {
+        width: 100%;
+        max-height: 300px;
+        padding: 12px 14px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        margin-bottom: 5px;
+        overflow-y: auto ;
+        transition: all 0.2s ease-in-out;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+      }
+
+      .error__input {
+        border: 1px solid #ff0000;
+      }
+
+      .comments__textarea,
+      .comments__textarea{
+        resize: vertical;
+        min-height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+
+      }
+
+      .error-text {
+        color: red;
+      }
+    }
+
+    button[type='submit'] {
+      width: 50%;
+      margin: 0 auto;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .comments__delete__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    .close__modal__btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 15px;
+      background-color: #dc3545;
+      color: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #a71d2a;
+      }
+    }
+  }
+}
